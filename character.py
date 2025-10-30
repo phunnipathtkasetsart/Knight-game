@@ -5,10 +5,13 @@ class Character:
         self.attack_power = attack_power
 
     def attack(self, other):
-        if 30 < self.attack_power < 90:
+        if 3 < self.attack_power < 9:
             other.hp -= self.attack_power
             print(f"{self.name} attacks {other.name} for {self.attack_power} damage!")
-
+        else:
+            self.attack_power = 3
+            other.hp -= self.attack_power
+            print(f"{self.name} attacks {other.name} for {self.attack_power} damage!")
     def is_alive(self):
         return self.hp > 0
 
