@@ -3,7 +3,7 @@ from character import Character
 def main():
     hero = Character("Knight", 30, 5)
     enemy = Character("Goblin", 20, 3)
-    enemy2 = Character("TheNa", 80, 2)
+    enemy2 = Character("TheNa", 20, 2)
 
 
     print(hero)
